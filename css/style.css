@@ -1,0 +1,50 @@
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #222222;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #777777;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Style the links */
+nav a {
+    float: left;
+    color: #DDDDDD;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Style the active link */
+nav a.active {
+    color: #6ECB63;
+}
+
+/* Style the links on hover */
+nav a:hover {
+    color: #FFFFFF;
+}
+  
+  
