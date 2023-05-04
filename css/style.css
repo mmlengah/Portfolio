@@ -1,3 +1,31 @@
+.text-style{
+    font-family: 'Verdana', sans-serif;
+    color: #EAE0CC;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+}
+
+.image {
+    flex: 1;
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*body style*/
 body {
     background-color:  #3D3B3C;
     margin: 0;
@@ -6,25 +34,25 @@ body {
     line-height: 1.5;
 }
 
-/* Style the navigation bar */
+/*navigation style*/
 nav {
-    background-color: #323031;
+    background: linear-gradient(#323031, #3D3B3C);
     overflow: hidden;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
-    background-color: #333;
+    padding: 0;    
     text-align: center;
+    line-height: 50px;
 }
 
 nav ul li {
     display: inline-block;
+    line-height: 50px;
 }
 
-/* Style the links */
 nav a {
     color: #EAE0CC;
     text-align: center;
@@ -32,20 +60,28 @@ nav a {
     text-decoration: none;
 }
 
-/* Style the active link */
 nav a.active {
     color: #00CA00;
 }
 
-/* Style the links on hover */
 nav a:hover {
     color: #FFFFFF;
     text-decoration: underline;
 }
 
-.text-style{
-    font-family: 'Open Sans', sans-serif;
-    color: #EAE0CC;
+/*footer style*/
+footer{
+    background: linear-gradient(#3D3B3C, #323031);
+    text-align: center;
+    line-height: 50px;
+}
+
+footer a:visited{
+    color: #000;
+}
+
+footer a:link{
+    color: #000;
 }
   
   
