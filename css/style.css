@@ -1,99 +1,120 @@
 /* .container, .image, .text{
     border: 1px solid red;
+
+    000000 // black (body)
+    323031 // jet (nav)
+    
+    FFFFFF // white (text)
+ 
+    #42AD7A // (visited link)
+    #08D966 // Malachite (call to action)
 } */
 
-.container {
-    background-color: #323031;
-    padding: 20px; /* add 20px of padding to the container */
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
-}
-
-.image, .text {
-    flex-grow: 1;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 50%;    
-}
-
-.image{
-    text-align: center;
-}
-
-.text{
-    text-align: left;
-    padding: 20px;
-    
-}
-
-.text h2{
-    line-height: 0;
-}
-
-img {
-    max-width: 70%;
-    height: auto;
-}
-
-/*body style*/
-body {
-    background-color:  #3D3B3C;
-    font-family: 'Verdana', sans-serif;
-    color: #EAE0CC;
+/* https://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
     padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-/*navigation style*/
-nav {
-    background: linear-gradient(#323031, #3D3B3C);
-    overflow: hidden;
+body{
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    background-color: #000000;
+    color: white;
+    min-height: 100vh;
 }
 
-nav ul{
-    list-style: none; 
-    text-align: center; 
-    margin: 0;
-    padding: 0;   
-}
-
-nav ul li {
-    line-height: 50px;
-    display: inline;
-}
-
-nav ul li a {
-    color: #EAE0CC;
-    text-decoration: none;
-    padding: 14px 16px;
+footer {
+    background-color: #323031;
+    color: white;
     text-align: center;
+    padding: 10px;
 }
 
-nav a.active {
-    color: #00CA00;
+footer a {
+    color: #08D966;
+    text-decoration: none;
 }
 
-nav a:hover {
-    color: #FFFFFF;
+footer a:visited {
+    color: #42AD7A;
+  }
+
+footer a:hover {
     text-decoration: underline;
 }
 
-/*footer style*/
-footer {
-    background: linear-gradient(#3D3B3C, #323031);
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #323031;
+    padding: 15px;
+    align-items: center;
+}
+
+.navbar a {    
+    padding: 14px 20px;
+    text-decoration: none;
     text-align: center;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
+    
 }
 
-footer a:visited{
-    color: #000;
+.navbar a, .navbar {
+    color: #FFFFFF;
 }
 
-footer a:link{
-    color: #000;
+.navbar a:hover {
+    color: #08D966;
+    text-decoration: underline;
 }
-  
-  
+
+.logo {
+    font-size: 20px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center; 
+}
+
+.flex-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.flex-text {
+    padding: 20px; /* Apply padding around the text */
+}
+
+.responsive-image {
+    max-width: 50%;
+    height: auto;
+}
+
+.rectangle {
+    width: 95%;
+    background-color: #323031;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(104, 100, 102, 0.5);
+    margin: 20px auto; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
