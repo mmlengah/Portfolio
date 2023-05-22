@@ -1,14 +1,8 @@
-/* .container, .image, .text{
-    border: 1px solid red;
-
-    000000 // black (body)
-    323031 // jet (nav)
-    
-    FFFFFF // white (text)
- 
-    #42AD7A // (visited link)
-    #08D966 // Malachite (call to action)
-} */
+/*
+#FFFFFF
+#282828
+#00C2E0
+*/
 
 /* https://meyerweb.com/eric/tools/css/reset/ */
 html, body, div, span, applet, object, iframe,
@@ -32,37 +26,55 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 0.875em;
+}
+
 body{
     font-family: "Helvetica Neue", Helvetica, sans-serif;
-    background-color: #000000;
-    color: white;
-    min-height: 100vh;
+    background-color: #F6F6F6;
+    height: 100%;
 }
 
-footer {
-    background-color: #323031;
-    color: white;
-    text-align: center;
-    padding: 10px;
+body, footer p, .navbar a, .navbar {
+    color: #F6F6F6;
 }
 
-footer a {
-    color: #08D966;
-    text-decoration: none;
+.text, p, h1, h2, h3, h4, h5, h6 {
+    color: black;
 }
 
-footer a:visited {
-    color: #42AD7A;
-  }
-
-footer a:hover {
-    text-decoration: underline;
+.navbar, footer {
+    background-color:  #282828 ;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: #323031;
     padding: 15px;
     align-items: center;
 }
@@ -71,50 +83,63 @@ footer a:hover {
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
-    
-}
-
-.navbar a, .navbar {
-    color: #FFFFFF;
 }
 
 .navbar a:hover {
-    color: #08D966;
+    color: #00C2E0;
     text-decoration: underline;
 }
 
 .logo {
-    font-size: 20px;
+    font-size: 1.25em;
+    text-decoration: none;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: center; 
+.logo a:hover {
+    color: inherit;
+    text-decoration: none;
 }
 
-.flex-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #00C2E0;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #008DA3;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.home {
+    position: relative;
+}
+  
+.home-image-container {
+    position: relative;
+    text-align: center;
     
 }
-
-.flex-text {
-    padding: 20px; /* Apply padding around the text */
+  
+.home-image-container img {
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
 }
-
-.responsive-image {
-    max-width: 50%;
-    height: auto;
-}
-
-.rectangle {
-    width: 95%;
-    background-color: #323031;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(104, 100, 102, 0.5);
-    margin: 20px auto; 
-    padding-top: 20px;
-    padding-bottom: 20px;
+  
+.home-text{
+    position: absolute;
+    top: 15%;
+    padding-left: 20px;
+    color: black;
+    font-size: 2em;
+    width: 30%;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
