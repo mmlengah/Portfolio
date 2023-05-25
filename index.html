@@ -10,7 +10,7 @@
 <body>
 
   <header>
-    <nav class="bg-gray-700 text-white p-5">
+    <nav id="navbar" class="bg-gray-700 text-white p-5">
         <div class="container mx-auto flex justify-between items-center">
             <div class="text-left">
                 <a href="#home" class="text-2xl text-gray-200">
@@ -31,50 +31,100 @@
     </nav>
 </header>
 
-<div class="bg-cover bg-center h-screen relative" style="background-image: url('./images/laptop.png')">
-  <div class="bg-black bg-opacity-50 h-full flex items-center justify-center text-white px-4">
-    <div class="text-center">
-      <h1 class="text-6xl mb-4">Hello and welcome!</h1>
-      <div class="max-w-lg mx-auto">
-        <p class="text-xl mb-8">Here, you'll discover a showcase of my skills, projects, and journey in becoming a software developer.</p>
+  <div class="bg-cover bg-center h-screen relative" style="background-image: url('./images/laptop.png')">
+    <div class="bg-black bg-opacity-50 h-full flex items-center justify-center text-white px-4">
+      <div class="text-center">
+        <h1 class="text-6xl mb-4">Hello and welcome!</h1>
+        <div class="max-w-lg mx-auto">
+          <p class="text-xl mb-8">Here, you'll discover a showcase of my skills, projects, and journey in becoming a software developer.</p>
+        </div>
+          <a href="mailto:matthiusmlengah@gmail.com?" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-700">Contact Me</a>
       </div>
-        <a href="mailto:matthiusmlengah@gmail.com?" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-700">Contact Me</a>
     </div>
   </div>
-</div>
 
-<div class="flex flex-col md:flex-row items-center justify-center p-10">
-  <img class="w-64 rounded-full mb-4 md:mb-0 md:mr-6" src="./images/me.jpg" alt="Your Name">
-  <div>
-    <h1 class="text-4xl font-bold mb-4">About Me</h1>
-    <p class="mb-4">
-      Back in 2020, during my pursuit of a computer science A-level, 
-      I had my initial encounter with programming. 
-      Our assignment was to create a 2D game in Python using the Pygame library. 
-      It was during this project that my passion for programming truly ignited, 
-      as I discovered the thrill of problem-solving and overcoming challenges. 
-      This experience laid the foundation for my continued journey in the field of computer science, 
-      which led me to join Birmingham City University. Here, I am devotedly studying of computer game technology, 
-      to expand my expertise and deepen my understanding. 
-      <br><br>
-      To gain a deeper understanding of my education and professional experience, I encourage you to review the attached CV for comprehensive details.
-      
+  <div class="flex flex-col md:flex-row items-center justify-center p-10">
+    <img class="w-64 rounded-full mb-4 md:mb-0 md:mr-6" src="./images/me.jpg" alt="Your Name">
+    <div>
+      <h1 class="text-4xl font-medium mb-4">About Me</h1>
+      <p class="mb-4">
+        Back in 2020, during my pursuit of a computer science A-level, 
+        I had my initial encounter with programming. 
+        Our assignment was to create a 2D game in Python using the Pygame library. 
+        It was during this project that my passion for programming truly ignited, 
+        as I discovered the thrill of problem-solving and overcoming challenges. 
+        This experience laid the foundation for my continued journey in the field of computer science, 
+        which led me to join Birmingham City University. Here, I am devotedly studying of computer game technology, 
+        to expand my expertise and deepen my understanding. 
+        <br><br>
+        To gain a deeper understanding of my education and professional experience, I encourage you to review the attached CV for comprehensive details.
+        
+      </p>
+      <div class="flex justify-center"> <!-- Add flex and justify-center classes -->
+        <a href="./documents/MatthiusMlengah.pdf" download class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-700">Download CV</a>
+        <a href="./documents/MatthiusMlengah.pdf" target="_blank" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-700 ml-2">Open CV in New Tab</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-6 bg-gray-100 rounded-xl shadow-md">
+    <div class="text-4xl font-medium text-black mb-4 text-center">Skills</div>
+    <div class="text-black mb-4 text-center">Here are a few programming projects I have successfully completed in various languages:</div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="flex justify-center">
+            <div class="bg-gray-100 rounded-lg p-5 text-left">
+                <h3 class="font-semibold">Python</h3>
+                <ul class="list-disc list-inside">
+                    <li>2D games</li>
+                    <li>Web scraping </li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <div class="bg-gray-100 rounded-lg p-5 text-left">
+                <h3 class="font-semibold">C++</h3>
+                <ul class="list-disc list-inside">
+                    <li>Game Engine</li>
+                    <li>Ray Tracer</li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <div class="bg-gray-100 rounded-lg p-5 text-left">
+                <h3 class="font-semibold">C#</h3>
+                <ul class="list-disc list-inside">
+                    <li>2D games</li>
+                    <li>3D games</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>  
+
+  <div class="p-8 bg-white rounded text-center">
+    <h1 class="text-4xl font-medium text-black mb-4">Projects</h1>
+    <p class="">I will be discussing several projects in my upcoming posts, 
+      which will be featured in the projects and dev logs sections. Within these write-ups, 
+      I will delve into my process of project planning and provide details into the development stages.</p>
+  </div>
+  
+  <div class="p-8 bg-gray-100 rounded text-center">
+    <h1 class="text-4xl font-medium text-black mb-4">Contact Me</h1>
+    <p class="mb-4">If you're interested in collaborating with me, 
+      I invite you to get in touch. 
+      Feel free to reach out via 
+      <a href="mailto:your-email@example.com" class="text-blue-600 underline">email</a> or connect with me on 
+      <a href="https://www.linkedin.com/in/matthius-mlengah/" target="_blank" class="text-blue-600 underline">LinkedIn</a>.
     </p>
-    <div class="flex justify-center"> <!-- Add flex and justify-center classes -->
-      <a href="./documents/MatthiusMlengah.pdf" download class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-700">Download CV</a>
-      <a href="./documents/MatthiusMlengah.pdf" target="_blank" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-700 ml-2">Open CV in New Tab</a>
+  </div>
+
+  <footer class="bg-gray-700 text-white p-5">
+    <div class="container mx-auto flex justify-center">
+      <p>&copy; 2023 by Matthius Mlengah | Images from <a href="https://unsplash.com" target="_blank" class="text-blue-400 underline">Unsplash</a></p>
     </div>
-  </div>
-</div>
+  </footer>
 
-
-
-
-<footer class="bg-gray-700 text-white p-5">
-  <div class="container mx-auto flex justify-center">
-    <p>&copy; 2023 by Matthius Mlengah | Images from <a href="https://unsplash.com" target="_blank" class="text-blue-400 underline">Unsplash</a></p>
-  </div>
-</footer>
+  <script src="./js/script.js"></script>
 
 </body>
 </html>

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "tailwindcss build -i ./css/tailwind.css -o ./css/style.css"
+    "build:css": "tailwindcss build -i ./css/tailwind.css -o ./css/style.css",
+    "build:css:watch": "tailwindcss build -i ./css/tailwind.css -o ./css/style.css --watch"
   },
   "keywords": [],
   "author": "",
