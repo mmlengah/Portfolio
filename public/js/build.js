@@ -1,8 +1,8 @@
 const fs = require('fs-extra');
 const path = require('path');
 
-const parentDirectory = path.resolve(__dirname, '..');
-const buildDirectory = path.join(parentDirectory, "build");
+const grandParentDirectory = path.resolve(__dirname, '../..');
+const buildDirectory = path.join(grandParentDirectory, "build");
 
 if (!fs.existsSync(buildDirectory)) {
     fs.mkdirSync(buildDirectory, { recursive: true });
@@ -12,16 +12,16 @@ if (!fs.existsSync(buildDirectory)) {
 }
 
 const filesToCopy = [
-  'index.html', 
-  'css',
-  'images',
-  "js",
-  "pages"
+  'app.js',
+  'package.json',
+  'node_modules',
+  'public',
+  'views'
 ];
 
 // Copy the files and folders to the build folder
 filesToCopy.forEach(file => {
-  const source = path.join(parentDirectory, file);
+  const source = path.join(grandParentDirectory, file);
   const destination = path.join(buildDirectory, file); // Include the file name in the destination path
 
   const fileStats = fs.statSync(source);
@@ -37,8 +37,8 @@ filesToCopy.forEach(file => {
 });
 
 const filesToRemove = [
-    'css/tailwind.css', 
-    'js/build.js', 
+    'public/css/tailwind.css', 
+    'public/js/build.js', 
 ];
 
 // Remove the files from the build folder

@@ -617,8 +617,8 @@ video {
   height: 100vh;
 }
 
-.h-2\/5 {
-  height: 40%;
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-6 {
@@ -627,10 +627,6 @@ video {
 
 .w-64 {
   width: 16rem;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .max-w-lg {
