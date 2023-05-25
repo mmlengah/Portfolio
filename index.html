@@ -11,25 +11,41 @@
 
   <header>
     <nav id="navbar" class="bg-gray-700 text-white p-5">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="text-left">
-                <a href="#home" class="text-2xl text-gray-200">
-                    Matthius Mlengah
-                </a>
-            </div>
-
-            <div class="text-right">
-                <ul class="space-x-4 flex">
-                    <li><a href="#" class="text-gray-200 hover:text-blue-400 hover:underline">Home</a></li>
-                    <li><a href="#" class="text-gray-200 hover:text-blue-400 hover:underline">About</a></li>
-                    <li><a href="#" class="text-gray-200 hover:text-blue-400 hover:underline">Projects</a></li>
-                    <li><a href="#" class="text-gray-200 hover:text-blue-400 hover:underline">Dev Logs</a></li>
-                    <li><a href="#" class="text-gray-200 hover:text-blue-400 hover:underline">Contact</a></li>
-                </ul>
-            </div>
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-left">
+          <a href="#home" class="text-2xl text-gray-200">
+            Matthius Mlengah
+          </a>
         </div>
+  
+        <!-- Mobile Menu (Burger Icon) -->
+        <div class="text-right md:hidden">
+          <button id="burger" class="text-white focus:outline-none">
+            <svg class="h-6 w-6" viewBox="0 0 24 24">
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+  
+        <!-- Regular Menu (Hidden on Mobile) -->
+        <div class="hidden md:block">
+          <ul class="space-x-4 flex">
+            <li><a href="#" class="text-gray-200 hover:text-blue-400 hover:underline">Home</a></li>
+            <li><a href="#" class="text-gray-200 hover:text-blue-400 hover:underline">About</a></li>
+            <li><a href="#" class="text-gray-200 hover:text-blue-400 hover:underline">Projects</a></li>
+            <li><a href="#" class="text-gray-200 hover:text-blue-400 hover:underline">Dev Logs</a></li>
+            <li><a href="#" class="text-gray-200 hover:text-blue-400 hover:underline">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
-</header>
+  </header>
 
   <div class="bg-cover bg-center h-screen relative" style="background-image: url('./images/laptop.png')">
     <div class="bg-black bg-opacity-50 h-full flex items-center justify-center text-white px-4">
@@ -43,8 +59,19 @@
     </div>
   </div>
 
+  <!-- Mobile Panel -->
+  <div class="fixed inset-0 w-1/2 h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50 hidden" id="mobilePanel">
+    <ul class="p-6 pt-20 text-center">
+      <li><a href="#" class="block text-gray-800 text-lg mb-4">Home</a></li>
+      <li><a href="#" class="block text-gray-800 text-lg mb-4">About</a></li>
+      <li><a href="#" class="block text-gray-800 text-lg mb-4">Projects</a></li>
+      <li><a href="#" class="block text-gray-800 text-lg mb-4">Dev Logs</a></li>
+      <li><a href="#" class="block text-gray-800 text-lg mb-4">Contact</a></li>
+    </ul>
+</div>
+
   <div class="flex flex-col md:flex-row items-center justify-center p-10">
-    <img class="w-64 rounded-full mb-4 md:mb-0 md:mr-6" src="./images/me.jpg" alt="Your Name">
+    <img class="w-64 rounded-full mb-4 md:mb-0 md:mr-6" src="./images/me.jpg" alt="Image of me">
     <div>
       <h1 class="text-4xl font-medium mb-4">About Me</h1>
       <p class="mb-4">
